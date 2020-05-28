@@ -31,7 +31,7 @@ git GUI除了GitHub for desktop外，还有两种常用的独立客户端工具�
 
 开源许可证可以保护贡献者和用户。正是有这开源许可证，才促使企业和开发人员开源。下面是阮一峰大神在2011年5月发表的一篇博客里的图，清晰明了地介绍了几种主流的许可证。
 
-![alt text](C:\Users\Administrator\Documents\GitHub\Front-end-study-notes\notes\bg2011050101.png)
+![alt text](notes\bg2011050101.png)
 
 我在这还重点介绍两种
 
@@ -43,15 +43,9 @@ git GUI除了GitHub for desktop外，还有两种常用的独立客户端工具�
 
 ## 4我创建和使用一个front-end study notes库的过程
 
-```
-
-1在GitHub上，点击 start a program，填写库名；
-
-2经过比较选择MIT许可证，.gitignore选择none，然后点击创建存储库repository；
-
-3进入到库中，看到有readme.md和license；随后我乱点点点，创建了一个文件和自动化；
-
-```
+1. 在GitHub上，点击 start a program，填写库名；
+2. 经过比较选择MIT许可证，.gitignore选择none，然后点击创建存储库repository；
+3. 进入到库中，看到有readme.md和license；随后我乱点点点，创建了一个文件和自动化；
 
 ## 5使用git的经验 
 
@@ -68,10 +62,23 @@ git GUI除了GitHub for desktop外，还有两种常用的独立客户端工具�
 
 ## 6使用GitHub for desktop的经验
 
-1选择和进入我之前创建的存储库front-end study notes；
+1. 选择和进入我之前创建的存储库front-end study notes；
 
-2在GitHub for desktop的主界面中，有常规的六个工具栏：file、edit、view、repository、branch、help；
+2. 在GitHub for desktop的主界面中，有常规的六个工具栏：file、edit、view、repository、branch、help；
 
-3在工具栏中，有current repository、current branch、fetch origin；再下面，左边是changes和history，右边是有三个选项操作（open in vscode、show in explorer、view on github）
+3. 在工具栏中，有current repository、current branch、fetch origin；再下面，左边是changes和history，右边是有三个选项操作（open in vscode、show in explorer、view on github）
 
-4我选择的是show in explore。在文件夹中我把之前写的文件放入其中，然后点击fetch origin，就实现了文档上传。优秀，舒服。
+4. 我选择的是show in explore。在文件夹中我把之前写的文件放入其中，然后点击fetch origin，就实现了文档上传。优秀，舒服。不过有些延迟，得十分钟才能在GitHub上看到自己上传的东西。
+
+## 7出现新的问题
+
+在typora中自动生成目录的[toc]到GitHub上不显示目录，而是显示这个这个符号，愁。为什么呢，在Javaguide上为什么可以自动生成目录？
+
+还有就是在本地用typora编辑markdown文档，使用的是本地，到了GitHub上就不显示了。
+
+然后我就去看Javaguide，看完之后，我发现Javaguide上是直接写的目录，怪不得。借鉴这个Javaguide，我发现他的目录用[前言](#前言)来实现。图片直接把存储库当做根目录，之前我是用电脑桌面为根目录。
+
+然后我试了试文档跳转，发现typora好像不能像图片引用那样使用存储库为根目录，但是Javaguide中却可以，看了看帮助文档，说是兼容性的问题。迷。
+
+其他文档用[typora使用体验](/notes/typora使用体验.md)来实现
+
