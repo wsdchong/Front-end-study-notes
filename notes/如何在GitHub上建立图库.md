@@ -42,7 +42,7 @@
 
 我创建的存储库就是没有发布源，僵硬。
 
-还有合并的时候不熟练，不同其实问题不大。其实挺想用GitHub for desktop来管理git的，但是延迟10分钟是真的问题大；还是得重新学学git，命令行就是比图形界面高效。——改变一下，突然发现是因为我只点了fetch origin（获取来源），没有点commint to master然后push origin的原因，才在GitHub上没刷新处理。（嘿嘿，又学到了，GitHub for desktop真香，git就不学了，懒得记）
+还有合并的时候不熟练，不过其实问题不大。其实挺想用GitHub for desktop来管理git的，但是延迟10分钟是真的问题大；还是得重新学学git，命令行就是比图形界面高效。——改变一下，突然发现是因为我只点了fetch origin（获取来源），没有点commint to master然后push origin的原因，才在GitHub上没刷新处理。（嘿嘿，又学到了，GitHub for desktop真香，git就不学了，懒得记）
 
 ## 收获
 
@@ -60,11 +60,12 @@ b2a32042ccf657f863cce2f40cc6ed695ee9dc17
 
 结论：还是没用，我就是建不了图床。扎心。在settings-source就是显示
 
-**Source**
-
-Your GitHub Pages site is currently being built from the `master` branch. [Learn more](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/).
-
-User pages must be built from the `master` branch.
+> **Source**
+>
+> Your GitHub Pages site is currently being built from the `master` branch. [Learn more](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/).
+>
+> User pages must be built from the `master` branch.
+>
 
 期待以后能解决。图片的事，我就先不纠结了
 
