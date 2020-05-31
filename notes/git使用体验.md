@@ -1,5 +1,7 @@
 # git使用体验
 
+文章持续更新，最新版本请在我的GitHub上看：https://github.com/wsdchong/Front-end-study-notes
+
 ## 前言
 
 - 出发点：看到JavaGuide的GitHub文档，看完后发现用GitHub写存文档十分好用。在此之前我都是用Word写笔记，然后在Windows10上用文件夹和文件命名来管理笔记。
@@ -68,7 +70,7 @@ git GUI除了GitHub for desktop外，还有两种常用的独立客户端工具�
 
 3. 在工具栏中，有current repository、current branch、fetch origin；再下面，左边是changes和history，右边是有三个选项操作（open in vscode、show in explorer、view on github）
 
-4. 我选择的是show in explore。在文件夹中我把之前写的文件放入其中，然后点击fetch origin，就实现了文档上传。优秀，舒服。不过有些延迟，得十分钟才能在GitHub上看到自己上传的东西。
+4. 我选择的是show in explore。在文件夹中我把之前写的文件放入其中，然后点击fetch origin，就实现了文档上传。优秀，舒服。不过有些延迟，得十分钟才能在GitHub上看到自己上传的东西。额，原来是我操作错了。fetch origin的意思是取回原点，是看GitHub上的版本和本地版本是不是不同；不同的话，GitHub for desktop会显示不同的地方，然后点击commit to master后，在点击push origin，就可以同步了。我之前会十分钟才显示就是因为我没有push origin。
 
 ## 7出现新的问题
 
