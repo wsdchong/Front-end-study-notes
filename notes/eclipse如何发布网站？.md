@@ -1,5 +1,7 @@
 # eclipse如何发布网站？
 
+文章持续更新，最新版本请在我的GitHub上看：https://github.com/wsdchong/Front-end-study-notes
+
 前言：之前做毕业设计的时候做了一个网站，数据库用mysql5.5，服务器用eclipse开发，后端用到SSM框架，前端用bootstrap框架。在自己的电脑上可以运转正常。
 
 然后现在我想把这个打包发布到网站上。对了，我还有一个百度的百度云主机和一个已通过审核的域名。去年还买了一个三个月的云服务器，但是平时不怎么用，就干脆没续费了。
@@ -38,7 +40,7 @@
 
 没想到今天的尝试这么顺利。但是我想用我的域名来绑定到这个服务器，或者把这个发布到云主机里，然后把域名绑定上去。具体怎么操控肯定比较不容易。
 
-### 百度一下：[tomcat发布项目绑定域名总结](https://blog.csdn.net/kongnan93/article/details/50461810)
+#### 百度一下：[tomcat发布项目绑定域名总结](https://blog.csdn.net/kongnan93/article/details/50461810)
 
 第一步是查自己电脑的IP，自己在电脑上搜一下就知道。
 

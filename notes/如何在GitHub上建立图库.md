@@ -1,7 +1,7 @@
 # 如何在GitHub上建立图库
 
+文章持续更新，最新版本请在我的GitHub上看：https://github.com/wsdchong/Front-end-study-notes
 本来以为简简单单，用不着专门写一篇博客的，结果发现还有需要写一下的。
-
 借鉴了两个教程，一个是在CSDN上的[教程](https://blog.csdn.net/int1282951082/article/details/95236240)，一个是GitHub上的用户[手册](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site).不过仅仅看这些还是不够的。
 
 先说说他们的教程的步骤吧，
