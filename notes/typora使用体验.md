@@ -1,5 +1,7 @@
 # typora使用体验
 
+文章持续更新，最新版本请在我的GitHub上看：https://github.com/wsdchong/Front-end-study-notes
+
 ## 前言
 
 出发点：1typora看markdown文档很舒服：最近在GitHub上看Javaguide，感觉写得挺好的就下载下来看，但是下载下来是.md文档，用Word打开是显示编辑状态下的文档，观看起来不友好。用vscode虽然也能边编辑边预览，但是我不喜欢黑色的界面。直到我使用了typora，我觉得好舒适，而且打开方便；2之前一直是使用Word文档写的笔记，也想过用markdown编辑器写笔记，但是我使用过的markdownpad不好看（轻微美观追求）就没用它写笔记。直到用了typora，我觉得好美观，值得使用。
@@ -53,6 +55,14 @@
 
 帮助：里面有说明文档
 
-## 将typora的文档上传到GitHub
+## 将typora写的文档上传到GitHub
 
-首先要在
+用GitHub for desktop将typora写的markdown文档同步到GitHub上；
+问题：1[toc]不能在GitHub上显示目录；2图片也不能用本地的链接；3文档都需要重新设置地址；
+不过其他显示什么的不影响。
+## 将typora写的文档复制到CSDN
+目前没遇到问题。在源代码模式下，Ctrl+A和Ctrl+C；然后在CSDN的markdown编辑器里Ctrl+V即可。目录和超链接都没受到影响。
+## typora写markdown的技巧
+可以在源代码模式用markdown标签来写；
+也可以在阅读模式下，用“段落”和“格式”来排版。我用的是第二种方法，简单方便，所见即所得。
+
