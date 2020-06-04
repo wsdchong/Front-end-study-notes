@@ -70,13 +70,170 @@
 
 我也不知道啊，但是肯定是效率上、功能上或者安全上的提升。往性能更好、开发运维更简便的方向上走。同时前端的发展不能只关注网站，其他硬件领域的（量子计算机、5G等）、软件方面的（VR、AI、大数据）都需要关注，毕竟都是相互联系的。
 
-## 第二章 Vue的基本介绍
+## 第二章 Vue的基本介绍（Vue实例）
 
 这一章讲在不使用项目构建工具的条件下，安装和引入Vue和特定的调试工具。
 
 正常情况下开发全新的Vue项目，最好使用项目构建工具Vue CLI，它可以快速构建一个“开箱即用”的大型单页应用，并提供优秀的构建配置。
 
-参考我以前写过的vue.js初次使用
+参考：这本书的第二章
+
+Vue的官网：https://cn.vuejs.org/v2/guide/installation.html
+
+我以前写过的[vue.js初次使用](https://github.com/wsdchong/Front-end-study-notes/blob/master/notes/1前端/进阶知识二elementUI/Vue.js初次使用.md)、JavaScript学习（未完善，参考《JavaScript权威指南》和菜鸟教程）
+
+学习要对比，要学以致用，要知道为什么要使用vue.js。通过用JavaScript实现一遍，再用vue.js实现一遍，两者对比，才能知道其中的对比在哪里。而对比的地方有显示（文本、图片、列表）、事件处理、表单
+
+### 安装和引入
+
+1引入vue.js；
+
+可以在官网下载vue.js的开发版本vue.js和生产版本vue.min.js，然后在HTML中用<script>标签引用。
+
+对于学习的时候，可以用cdn；
+
+```
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+```
+
+对于用Vue构建大型应用时推荐用NPM（node包管理工具）；
+
+2安装Vue devtools；
+
+在Chrome浏览器上安装Vue devtools拓展程序，这个程序可以帮助我们查看Vue组件和全局状态管理器vuex中记录的数据。
+
+有条件的在Google web store搜索下载；没条件的用git或npm下载，然后手动安装；
+
+### Vue实例介绍
+
+每个Vue应用都是通过Vue函数创建一个新的Vue实例开始的。如：
+
+```
+<body>
+<div id="app">
+  <h1>{{ title }}</h1>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script type="text/javascript">
+  var vm = new Vue({
+    el: '#app', // mount到DOM上
+    data () {
+      return {
+        title: 'Hello World'
+      }
+    }
+  })
+</script>
+</body>
+```
+
+在这个实例中，初始化了带title数据的vm对象以及将其绑定到ID为APP的DOM节点上。
+
+如果不引用vue.js，JavaScript如何实现这种数据绑定呢？我猜应该是用DOM操作；
+
+这样使用的好处在哪？
 
 
+
+### 拓展了解：Vue实例
+
+每个Vue应用都是通过Vue函数创建一个新的Vue实例开始的。
+
+有种感觉是，vue.js实例就好像是jQuery.js中的选择器加强版。它不仅仅绑定元素的id、class、类型、属性、属性值,还绑定数据。数据改变，绑定的视图里的数据也跟着变。
+
+jQuery的使用我感觉就是一个选择器一个事件，最后就是方法；操作的方法就是用选择器选择元素，然后根据事件执行方法；缺点就是每次都要选择。修改元素要自己用函数去修改。
+
+vue.js的使用我感觉精华在这个绑定上，这个绑定不光绑定元素，还绑定了数据和方法，这就很灵性了。~~首先建一个Vue实例，然后用el选项指定挂载目标（属性值仅限于CSS选择器和DOM节点对象），最后data方法中返回~~
+
+
+
+## 第三章 Vue的模板语法（指令）
+
+vue.js使用HTML的模板语法，允许开发者声明式地将DOM绑定到底层Vue实例的数据。
+
+vue.js的核心是运行采用简洁的模板语法来声明式地将数据渲染进DOM的系统，集合响应式，当应用状态改变时，Vue能够智能地计算出重新渲染组件的最小代价并应用到DOM操作上。如果足够熟悉虚拟DOM并且偏爱JavaScript的原始力量，可以不用模板，直接写渲染（render）函数，使用可选jsx语法。
+
+提取关键信息就是vue.js的模板语法是使用虚拟DOM和JavaScript来实现的。说到这，我发现我之前学的jQuery和这个好像，jQuery是用DOM和JavaScript来实现模板语法。我猜关键可能就在这个虚拟DOM上了，jQuery的缺点应该就是DOM的使用次数很多，也许用了虚拟DOM可以智能计算重新渲染组件的最小代价并应用到DOM操作上。所以可以理解为vue.js是jQuery.js的升级版。vue.js的本质就是用到虚拟DOM的JavaScript库。
+
+### 双向绑定用的指令
+
+v-model指令：为可输入元素创建双向数据绑定。类似jQuery中的选择器。选择元素。
+
+### 事件绑定用的指令
+
+v-on指令：监听DOM事件。类似jQuery的事件响应。
+
+### 插值绑定与属性绑定用的指令
+
+v-bind指令：类似jQuery的DOM方法。
+
+### 渲染用的指令
+
+v-if指令：条件渲染
+
+v-show指令：也可以用于条件渲染，但只能渲染元素的CSS属性：display。那么v-show用于什么呢。以后懂了再补上答案。
+
+v-for：循环渲染
+
+
+
+## 第四章 Vue实例的常用（选项）
+
+### 数据与方法相关的选项
+
+data选项：可接受的类型有对象和函数两种。
+
+props选项：属性选项，可以用其为组件为组件注册动态特性。用于业务大部分特性都一致，但部分有差异。可以是代码好复用些。
+
+methods选项：方法选项。顾名思义。
+
+computed选项：计算属性。初衷是减轻模板上的业务负担，当数据链上出现复杂衍生数据时，用这个选项设置可以更易维护地使用它。
+
+watch选项：观察属性，使用侦听属性。
+
+### DOM渲染相关的选项
+
+el选项：指定Vue实例的挂载目标，属性值仅限于CSS选择器和DOM节点对象。
+
+render选项：渲染选项。
+
+template选项：模板选项。获取实例模板（指定或创建），与el、render选项功能一致。
+
+### 封装复用相关的选项
+
+filters选项：过滤器选项。定义当前组件或实例作用域中可用的过滤器。
+
+directives选项：自定义指令选项。
+
+components选项：组件选项。用于为组件注册从外部引入的组件。应用场景是自定义组件和引入第三方库中的组件。
+
+mixins选项：混入选项。用于注册在外部封装好的代码，不过不如组件一样成体系，但是更灵活地分发组件中一些可复用的功能。
+
+
+
+created选项与mounted选项：待定。书上还说这是钩子函数，一些迷。
+
+## 第五章 Vue内置组件
+
+组件是可复用的Vue实例，且带有一个名字。因为组件是可复用的Vue实例，所以与new Vue接受相同的选项，如data、computed、watch、methods以及生命周期钩子等。唯一例外的是el选项，这是根实例特有的选项。
+
+下面要讲的是用Vue内置的组件。这个类似jQuery里的切换页面和过渡效果。
+
+### 组件服务
+
+动态组件：某些常见需要我们动态切换页面部分区域的视图，这个时候可以使用component组件。
+
+分发内容：通过props选项，组件可以接受多态的数据，如果希望组件还能接受多态的DOM结构，可以使用slot组件。
+
+组件的缓存：keep-alive组件可以缓存一些非动态的组件实例。
+
+### 过渡效果
+
+单节点的过渡：transition组件
+
+多节点的过渡：transition-group组件，可以实现列表过渡
+
+
+
+## 第六章 Vue项目化
 

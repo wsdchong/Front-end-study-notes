@@ -4,7 +4,7 @@
 
 目的一：在学习springboot的同时，顺便学习一下Vue。主要是我每次引入项目到IDEA中，它总是要下载个二三十分钟，有这个时间，我就把我学的Vue梳理一次。
 
-目的二：先入手前端，走Vue体系路线，入手Vue后，网页用elementUI、移动端用Uni-app；后端入手node+express；有了底子后，尝试一个我眼中是一个前辈的博主的开源项目。
+目的二：先入手前端，走Vue体系路线，入手Vue后，网页用elementUI、移动端用Uni-app；后端入手node+express；有了底子后，尝试一个我眼中是一个优秀的博主的开源项目。
 
 目前已经具备的前置知识：HTML、CSS、JavaScript、DOM、BOM、HTTP、jQuery、bootstrap等。之前重点用《JavaScript权威指南（第6版）》和菜鸟教程来学习前端，用博客辅助理解。
 
